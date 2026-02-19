@@ -1,0 +1,307 @@
+/* Responsive Design for ELY CART */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .section {
+        padding: 40px 24px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .logo::before {
+        font-size: 28px;
+    }
+    
+    .search-container {
+        order: 3;
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .header-actions {
+        gap: 8px;
+    }
+    
+    .header-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .header-btn span {
+        display: none;
+    }
+    
+    .mega-menu-container {
+        padding: 8px 16px;
+        gap: 6px;
+    }
+    
+    .mega-menu-item {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    /* Hero Carousel Mobile */
+    .hero-carousel-container {
+        height: 400px;
+    }
+    
+    .hero-slide-content {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+    
+    .hero-slide-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-slide-content p {
+        font-size: 16px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .carousel-btn.prev {
+        left: 10px;
+    }
+    
+    .carousel-btn.next {
+        right: 10px;
+    }
+    
+    .hero-discount-badge {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+    
+    .hero-banner {
+        padding: 50px 20px;
+    }
+    
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    
+    .banner-content p {
+        font-size: 16px;
+    }
+    
+    .section {
+        padding: 30px 16px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 12px;
+    }
+    
+    .product-card {
+        border-radius: 10px;
+    }
+    
+    .product-image {
+        height: 150px;
+    }
+    
+    .product-title {
+        font-size: 13px;
+        height: 40px;
+    }
+    
+    .current-price {
+        font-size: 20px;
+    }
+    
+    .original-price {
+        font-size: 14px;
+    }
+    
+    .category-card {
+        padding: 20px 16px;
+    }
+    
+    .category-icon {
+        font-size: 40px;
+    }
+    
+    .category-name {
+        font-size: 14px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .modal-content {
+        margin: 0;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
+    .chat-panel {
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-large {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+    
+    .price-summary {
+        position: static;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px 12px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .search-input {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    /* Hero Carousel Small Mobile */
+    .hero-carousel-container {
+        height: 350px;
+    }
+    
+    .hero-slide-content {
+        padding: 20px;
+        max-width: 95%;
+    }
+    
+    .hero-slide-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-slide-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    
+    .carousel-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .carousel-dots .dot.active {
+        width: 24px;
+    }
+    
+    .banner-content h1 {
+        font-size: 28px;
+    }
+    
+    .banner-content p {
+        font-size: 14px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    #toast-container {
+        right: 12px;
+        left: 12px;
+    }
+    
+    .toast {
+        min-width: auto;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-banner {
+        padding: 40px 20px;
+    }
+    
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    
+    .chat-panel {
+        height: 90vh;
+    }
+}
+
+/* Print styles */
+@media print {
+    header,
+    footer,
+    .mega-menu,
+    .chat-widget,
+    .header-actions,
+    #toast-container {
+        display: none !important;
+    }
+    
+    .product-card {
+        break-inside: avoid;
+    }
+}
